@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML CSS Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        h1 {
+            color: #333;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            margin: 20px auto;
+            max-width: 400px;
+        }
+        input[type="text"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Page</h1>
+    
+    <img src="https://imgs.search.brave.com/6w-7evoIIB0uiR-mC_JXZhmMT5MlgQUSQcTccPtV5Jo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2VjLzVi/LzBiL2VjNWIwYjgx/MGE0MDY5Yzg5MDA2/YmE4NGI3ZjM5MDRj/LmpwZw" alt="Tomie from Juni Ito Collection">
+    
+    <h2>About Me</h2>
+    <p>This is a brief description about me.</p>
+    
+    <h2>My Interests</h2>
+    <ul>
+        <li>Programming</li>
+        <li>Reading</li>
+        <li>Watching Horror</li>
+    </ul>
+    
+    <h2>My Table</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Location</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>30</td>
+            <td>New York</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>25</td>
+            <td>Los Angeles</td>
+        </tr>
+    </table>
+    
+    <h2>Contact Me</h2>
+    <form action="#" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
