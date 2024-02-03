@@ -10,6 +10,26 @@
             margin: 20px;
             padding: 0;
         }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #111;
+        }
         h1 {
             color: #333;
             text-align: center;
@@ -20,7 +40,10 @@
             display: block;
             margin: 20px auto;
         }
-        ul {
+        .list{
+            background-color: white;
+        }
+        .Programming {
             list-style-type: square;
             margin-left: 20px;
         }
@@ -73,18 +96,25 @@
     </style>
 </head>
 <body>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#About me">About Me</a></li>
+        <li><a href="#interest">Interests</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      
     <h1>Welcome to My Page</h1>
     
     <img src="https://imgs.search.brave.com/6w-7evoIIB0uiR-mC_JXZhmMT5MlgQUSQcTccPtV5Jo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2VjLzVi/LzBiL2VjNWIwYjgx/MGE0MDY5Yzg5MDA2/YmE4NGI3ZjM5MDRj/LmpwZw" alt="Tomie from Juni Ito Collection">
     
-    <h2>About Me</h2>
+    <h2 id="About me">About Me</h2>
     <p>This is a brief description about me.</p>
     
-    <h2>My Interests</h2>
-    <ul>
-        <li>Programming</li>
-        <li>Reading</li>
-        <li>Watching Horror</li>
+    <h2 id="interest">My Interests</h2>
+    <ul class="list">
+        <li class="Programming">Programming</li>
+        <li class="Programming">Reading</li>
+        <li class="Programming">Watching Horror</li>
     </ul>
     
     <h2>My Table</h2>
@@ -106,7 +136,7 @@
         </tr>
     </table>
     
-    <h2>Contact Me</h2>
+    <h2 id="contact">Contact Me</h2>
     <form action="#" method="POST">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
